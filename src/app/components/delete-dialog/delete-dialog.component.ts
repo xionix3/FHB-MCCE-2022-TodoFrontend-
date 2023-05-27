@@ -7,14 +7,11 @@ import { TodoItem } from 'src/app/interfaces/todo-item/todo-item';
   templateUrl: './delete-dialog.component.html',
   styleUrls: ['./delete-dialog.component.css']
 })
-export class DeleteDialogComponent implements OnInit {
+export class DeleteDialogComponent {
 
   constructor(
     public dialogRef: MatDialogRef<DeleteDialogComponent>,
     @Inject(MAT_DIALOG_DATA) public item: TodoItem
   ) { }
-
-  ngOnInit(): void {
-  }
 
 }
